@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/svg" href="./imgs/resources.svg">
+</head>
+
+<body>
+    <a href="/catalog" class="home"><img class="home-svg" src="./imgs/home.svg" alt=""></a>
+    <div class="content">
+        <h1>OS Resurces Monitor</h1>
+        <div class="user">Hello</div>
+        <div class="os">OS Type</div>
+        <!-- CPU  -->
+        <label class="cpu-label" for="cpu">CPU 0%</label>
+        <progress class="cpu-bar" id="cpu" value="10" min='0' max='100'></progress>
+        <!-- RAM  -->
+        <label class="ram-label" for="ram">RAM 0%</label>
+        <progress class="ram-bar" id="ram" value="10" min='0' max='100'></progress>
+
+    </div>
+
+    <footer>width 💙 @gd</footer>
+    <!-- SOCKET IO  -->
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</body>
+
+</html>
