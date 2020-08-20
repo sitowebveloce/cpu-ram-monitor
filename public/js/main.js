@@ -9,7 +9,7 @@ const user = document.querySelector('.user');
 const os = document.querySelector('.os');
 
 // ON CONNECT EVENT
-socket.on('connect', io => {
+socket.on('connect', () => {
     console.log('Connected');
 });
 // ON RAM USAGE EVENT
